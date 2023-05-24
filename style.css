@@ -24,43 +24,76 @@ h1 {
 
 }
 
-.ship-container {
-    display: flex;
-    gap: 5px;
-    flex-direction: row;
-    margin-top: 300px;
-
+h2 {
+    margin-top: 30px;
 }
 
-.ship {
+.ship-container {
+    display: flex;
+    gap: 10px;
+    margin: 30px;
+}
 
-    background-color: aliceblue;
+
+.ship1 {
+    background-color: red;
+} 
+
+.ship2 {
+    background-color: red;
+}
+
+.ship3 {
+    background-color: red;
+}
+
+.ship4 {
+    background-color: red;
+}
+
+
+.ship-1 {
+    width: 50px;
+    height: 100px;
+    margin: 3px;
+    background-color: rgb(10, 65, 112);
+    opacity: 60%;
+    border: 1px solid black;
+    cursor: grab;
+   
+}
+
+.ship-2 {
+    width: 50px;
+    height: 150px;
+    margin: 3px;
+    background-color: rgb(10, 65, 112);
     opacity: 60%;
     border: 1px solid black;
     cursor: grab;
 }
 
-#ship1 {
-    width: 48px;
-    height: 98px;
-}
-
-#ship2 {
-    width: 50px;
-    height: 150px;
-}
-
-#ship3 {
+.ship-3 {
     width: 50px;
     height: 200px;
+    margin: 3px;
+    background-color: rgb(10, 65, 112);
+    opacity: 60%;
+    border: 1px solid black;
+    cursor: grab;
 }
 
-#ship4 {
+.ship-4 {
     width: 50px;
     height: 250px;
+    margin: 3px;
+    background-color: rgb(10, 65, 112);
+    opacity: 60%;
+    border: 1px solid black;
+    cursor: grab;
 }
 
-.grid-container {
+#grid-container {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
@@ -70,7 +103,23 @@ h1 {
 
 }
 
-.grid {
+.game-grid {
+    width: 500px;
+    height: 500px;
+    opacity: 60%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: solid rgb(73, 72, 72) 1px;
+    box-sizing: border-box;
+}
+
+/* .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -88,8 +137,10 @@ h1 {
 }
 
 #plyrGrid .cell {
-    
+    background-color: aliceblue;
+    border: 1px;
 }
+
 
 
 
@@ -107,5 +158,5 @@ h1 {
 .invisible {
     display: none;
 }
-
+ */
 

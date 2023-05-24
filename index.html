@@ -5,38 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="battleship.css">
-    <script defer src="battleship.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script defer src="script.js"></script>
     <title>Battleship</title>
 </head>
 
 <body>
    
     <div class = "left-container">
-        <div class = "text-container">
+
+        <div id = "text-container">
             <h1>Battleship</h1>
-            <h2> Score:<span></span></h2>
+            <h2> Turn: <span id ="turn-display"></span></h2>
+            <h2> Score:<span id = "score-display"></span></h2>
         </div>
-        <div class= "ship-container">
             <h2>Ships:</h2>
-            <div class = "ship" id = "ship1" data-size="2" draggable="true">
+        <div class= "ship-container">
+            
+            <div class = "ship-1 ship1" id = "0" data-size="2" draggable="true">
                 <img src="Ship1.png" alt="Ship-1">
             </div>
-            <div class = "ship" id = "ship2" data-size="3" draggable="true">
+            <div class = "ship-2 ship2" id = "1" data-size="3" draggable="true">
                 <img src="Ship2.png" alt="Ship-2">
             </div>
-            <div class = "ship" id = "ship3" data-size="4" draggable="true">
+            <div class = "ship-3 ship3" id = "2" data-size="4" draggable="true">
                 <img src="Ship3.png" alt="Ship-3">
             </div>
-            <div class = "ship" id = "ship4" data-size="5" draggable="true">
+            <div class = "ship-4 ship4" id = "3" data-size="5" draggable="true">
                 <img src="Ship4.png" alt="Ship-4">
             </div>
         </div>
+        <button id = "rotate-button">ROTATE</button>
+        
+
+        <!-- <button onclick ="randomizeShips()">Randomize</button> -->
     </div>
-    <div class = "grid-container">
-        <div class="grid" id ="compGrid">
+
+    <div id = "grids-container"></div>
+    <button id = "start-button">START</button>
+    <!-- <div id = "grids-container"> -->
+        <!-- <div class="grid" id ="compGrid">
             <div class="cell" id = "1A"></div>
             <div class="cell" id = "2A"></div>
             <div class="cell" id = "3A"></div>
@@ -137,9 +147,9 @@
             <div class="cell" id = "8J"></div>
             <div class="cell" id = "9J"></div>
             <div class="cell" id = "10J"></div>
-        </div>
+        </div> -->
 
-        <div class ="grid" id ="plyrGrid">
+        <!-- <div class ="grid" id ="plyrGrid">
             <div class="cell" id = "1A" data-index = "0"></div>
             <div class="cell" id = "2A" data-index = "1"></div>
             <div class="cell" id = "3A" data-index = "2"></div>
@@ -240,8 +250,9 @@
             <div class="cell" id = "8J" data-index = "97"></div>
             <div class="cell" id = "9J" data-index = "98"></div>
             <div class="cell" id = "10J" data-index = "99"></div>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
+   
 
 
 </body>
