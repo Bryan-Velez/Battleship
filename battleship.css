@@ -1,0 +1,144 @@
+html {
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/battleship-glend-art-collections.jpg);
+    background-size: cover;
+    /* transform: scale(-1); */
+}
+
+body {
+    font-family: 'Pirata One', cursive;
+    color: aliceblue;
+    -webkit-text-stroke: 1px rgb(106, 106, 106);
+    display: flex;
+}
+
+
+h1 {
+    color: aliceblue;
+    font-size: 130px;
+    margin: auto;
+    text-decoration: underline;
+    -webkit-text-stroke: 1px rgb(106, 106, 106);
+}
+
+h2 {
+    font-size: 40px;
+    background-color: #9ab9d5;
+    border-radius: 10px;
+    opacity: 70%;
+    font-weight: bolder;
+    
+}
+
+#gamesboard-container {
+    margin-left: 80px;
+
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    opacity: 60%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: solid rgb(73, 72, 72) 1px;
+    box-sizing: border-box;
+}
+
+/* #ship-display {
+    
+} */
+
+.ship-container {
+    margin-top: 300px;
+    background-color: #9ab9d5;
+    border-radius: 10px;
+    border: solid black 1px;
+    display: flex;
+}
+
+.option-container {
+    width: 750px;
+    height: 80px;
+    margin: 30px;
+    background-color: aliceblue;
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.destroyer {
+    background-color: orange;
+}
+.cruiser {
+    background-color: blue;
+}
+.submarine {
+    background-color: green;
+}
+.carrier {
+    background-color: yellow;
+}
+
+.destroyer-preview {
+    width: 100px ;
+    height: 50px;
+    margin: 3px;
+    opacity: 80%;
+    border: 1px solid black;
+    cursor: grab;
+
+}
+
+.cruiser-preview {
+    width: 150px ;
+    height: 50px;
+    margin: 3px;
+    opacity: 80%;
+    border: 1px solid black;
+    cursor: grab;
+}
+
+.submarine-preview {
+    width: 200px ;
+    height: 50px;
+    margin: 3px;
+    opacity: 80%;
+    border: 1px solid black;
+    cursor: grab;
+}
+
+.carrier-preview {
+    width: 250px ;
+    height: 50px;
+    margin: 3px;
+    opacity: 80%;
+    border: 1px solid black;
+    cursor: grab;
+}
+
+.hover {
+    background-color: whitesmoke
+}
+
+.hit {
+    background-color: rgb(192, 1, 1) !important;
+}
+
+.empty {
+    background-color: rgba(50, 50, 50, 0.473) !important;
+}
+
+#computer .destroyer, 
+#computer .cruiser,
+#computer .submarine,
+#computer .carrier {
+    background-color: aliceblue;
+}
