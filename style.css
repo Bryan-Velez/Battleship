@@ -1,5 +1,5 @@
 html {
-    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/battleship-glend-art-collections.jpg);
+    background-image: url(Ship-background.jpg);
     background-size: cover;
     /* transform: scale(-1); */
 }
@@ -25,12 +25,12 @@ h2 {
     background-color: #9ab9d5;
     border-radius: 10px;
     opacity: 70%;
-    font-weight: bolder;
+    font-weight: bold;
     
 }
 
 #gamesboard-container {
-    margin-left: 80px;
+    margin-left: 120px;
 
 }
 
@@ -60,6 +60,7 @@ h2 {
     border-radius: 10px;
     border: solid black 1px;
     display: flex;
+    opacity: 70%;
 }
 
 .option-container {
@@ -67,11 +68,10 @@ h2 {
     height: 80px;
     margin: 30px;
     background-color: aliceblue;
-    opacity: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .destroyer {
@@ -91,37 +91,40 @@ h2 {
     width: 100px ;
     height: 50px;
     margin: 3px;
-    opacity: 80%;
+    opacity: 70%;
     border: 1px solid black;
     cursor: grab;
-
+    background-image: url(Ship1.png);
 }
 
 .cruiser-preview {
     width: 150px ;
     height: 50px;
     margin: 3px;
-    opacity: 80%;
+    opacity: 70%;
     border: 1px solid black;
     cursor: grab;
+    background-image: url(Ship2.png);
 }
 
 .submarine-preview {
     width: 200px ;
     height: 50px;
     margin: 3px;
-    opacity: 80%;
+    opacity: 70%;
     border: 1px solid black;
     cursor: grab;
+    background-image: url(Ship3.png);
 }
 
 .carrier-preview {
     width: 250px ;
     height: 50px;
     margin: 3px;
-    opacity: 80%;
+    opacity: 70%;
     border: 1px solid black;
     cursor: grab;
+    background-image: url(Ship4.png);
 }
 
 .hover {
@@ -134,6 +137,42 @@ h2 {
 
 .empty {
     background-color: rgba(50, 50, 50, 0.473) !important;
+}
+
+#rotate-button:hover {
+    background-color: aliceblue;
+    border: white solid 1px;
+}
+
+#start-button:hover {
+    background-color: aliceblue;
+    border: white solid 1px;
+}
+#rotate-button {
+    background-color: #9ab9d5;
+    border-radius: 10px;
+    border: black solid 1px;
+    color: rgb(42, 33, 141);
+    padding: 15px 32px;
+    text-align: center;
+    opacity: 70%;
+    font-size: 20px;
+    margin: 8px 4px;
+    cursor: pointer;
+}
+
+#start-button {
+    background-color: #9ab9d5;
+    border-radius: 10px;
+    border: black solid 1px;
+    color: rgb(42, 33, 141);
+    padding: 15px 32px;
+    text-align: center;
+    opacity: 70%;
+    font-size: 20px;
+    margin: 8px 4px;
+    margin-left: 30px;
+    cursor: pointer;
 }
 
 #computer .destroyer, 
