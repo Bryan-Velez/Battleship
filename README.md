@@ -38,4 +38,4 @@ Credits, Links, and Resources-
 Developer: Bryan Velez
 Trello: https://trello.com/b/6Zh9nYuW/battleship
 Video tutorial: https://www.youtube.com/watch?v=Ubh_k18sX4E&ab_channel=CodewithAniaKub%C3%B3w
-Surge: bashful-banana.surge.sh
+Surge: tasteful-corn.surge.sh
